@@ -1,0 +1,59 @@
+<mvc:View xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m" controllerName="br.com.oggettiva.correiosBuscarCep.controller.Main01" displayBlock="true">
+	<App>
+		<pages>
+			<Page title="{i18n>title}">
+				<content>
+				    <sap.ui.layout.form:Form xmlns:sap.ui.layout.form="sap.ui.layout.form" editable="true" id="formcontol1" title="Cep Brasil" tooltip="Consulte Ceps do Brasil">
+				        <sap.ui.layout.form:formContainers>
+				            <sap.ui.layout.form:FormContainer id="Container1">
+				                <sap.ui.layout.form:formElements>
+				                    <sap.ui.layout.form:FormElement label="CEP" id="InCEP">
+				                        <sap.ui.layout.form:fields>
+				                            <Input width="100%" id="inputCEP" length="8" liveChange=".onEnviaCep" type="Number" placeholder="Digite o CEP ( Somente Números)"/>
+				                        </sap.ui.layout.form:fields>
+				                    </sap.ui.layout.form:FormElement>
+				                    <sap.ui.layout.form:FormElement xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout.form="sap.ui.layout.form" label="Rua" id="lbRua">
+				                        <sap.ui.layout.form:fields>
+				                            <Input xmlns="sap.m" width="100%" id="InRua" editable="false" value="{/logradouro}"/>
+				                            
+				                        </sap.ui.layout.form:fields>
+				                        
+				                    </sap.ui.layout.form:FormElement>
+				                    <sap.ui.layout.form:FormElement xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout.form="sap.ui.layout.form" label="Complemento" id="lbComp">
+				                        <sap.ui.layout.form:fields>
+				                            <Input xmlns="sap.m" width="100%" id="InComplemento" editable="false" value="{/complemento}"/>
+				                            
+				                        </sap.ui.layout.form:fields>
+				                        
+				                    </sap.ui.layout.form:FormElement>
+				                    <sap.ui.layout.form:FormElement xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout.form="sap.ui.layout.form" label="Bairro" id="lbBairro">
+				                        <sap.ui.layout.form:fields>
+				                            <Input xmlns="sap.m" width="100%" id="InBairro" editable="false" value="{/bairro}"/>
+				                            
+				                        </sap.ui.layout.form:fields>
+				                        
+				                    </sap.ui.layout.form:FormElement>
+				                    <sap.ui.layout.form:FormElement label="Cidade" id="lbCidade">
+				                        <sap.ui.layout.form:fields>
+				                            <Input width="100%" id="Inlocalidade" editable="false" value="{/localidade}"/>
+				                        </sap.ui.layout.form:fields>
+				                    </sap.ui.layout.form:FormElement>
+				                    <sap.ui.layout.form:FormElement xmlns:html="http://www.w3.org/1999/xhtml" xmlns:mvc="sap.ui.core.mvc" xmlns:sap.ui.layout.form="sap.ui.layout.form" label="Estado" id="lbUF">
+				                        <sap.ui.layout.form:fields>
+				                            <Input xmlns="sap.m" width="100%" id="InUF" editable="false" value="{/uf}"/>
+				                            
+				                        </sap.ui.layout.form:fields>
+				                        
+				                    </sap.ui.layout.form:FormElement>
+				                    
+				                </sap.ui.layout.form:formElements>
+				            </sap.ui.layout.form:FormContainer>
+				        </sap.ui.layout.form:formContainers>
+				        <sap.ui.layout.form:layout>
+				            <sap.ui.layout.form:ResponsiveGridLayout id="__layout0"/>
+				        </sap.ui.layout.form:layout></sap.ui.layout.form:Form>
+				</content>
+			</Page>
+		</pages>
+	</App>
+</mvc:View>
